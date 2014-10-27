@@ -28,8 +28,8 @@ Library "qbf-quantor"
   Path:                 src/quantor/
   Modules:              Quantor
   CSources:             quantor_stubs.c, quantor_stubs.h
-  CCOpt:                -O2 -Wextra -Wno-unused-parameter -I../libs/quantor-3.0/
-  CCLib:                -L../libs/quantor-3.0/ -lquantor
+  CCOpt:                -O2 -Wextra -Wno-unused-parameter -I../libs/quantor-3.2/
+  CCLib:                -L../libs/quantor-3.2/ -lquantor
   FindlibName:          quantor
   FindlibParent:        qbf
   Build$:               flag(quantor)

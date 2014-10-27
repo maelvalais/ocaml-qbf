@@ -1,11 +1,13 @@
 
+PICOSAT=picosat-960/
+QUANTOR=quantor-3.2/
 
 all:
-	cd picosat-535/ ; ./configure ; make
-	cd quantor-3.0/ ; ./configure --picosat=../picosat-535 ; make
+	cd "$(PICOSAT)" ; ./configure ; make
+	cd "$(QUANTOR)" ; ./configure --picosat="../$(PICOSAT)" ; make
 
 clean:
-	make -C picosat-535/ clean
-	make -C quantor-3.0/ clean
+	make -C "$(PICOSAT)" clean
+	make -C "$(QUANTOR)" clean
 
 .PHONY: all clean
